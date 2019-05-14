@@ -1,12 +1,27 @@
 :root {
-  font: 16px / 1 sans-serif;
+  font: 40px / 1 sans-serif;
 }
 
 html {
   height: 100%;
+  background: black;
 }
 
 body {
-  margin: 0;
+  margin: 5%;
   min-height: 100%;
+  background: antiquewhite;
+  background-image: url('./Orthographic-Projection-678x322.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background;
+}
+
+input {
+  min-width: 25%;
+}
+
+button {
+  background: mediumseagreen;
+  border-radius: 1rem;
 }
