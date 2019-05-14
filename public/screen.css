@@ -8,9 +8,10 @@ html {
 }
 
 body {
-  margin: 5%;
+  margin: 3%;
   min-height: 100%;
-  background: antiquewhite;
+  background: url('./LIFT-weather-spectre-800x450.jpg');
+  /* background: antiquewhite; */
   border-radius: 1rem;
   color: blue;
   /* background-image: url('./Orthographic-Projection-678x322.png');
@@ -23,6 +24,7 @@ h1 {
   padding: 1rem;
   text-align: center;
 }
+
 h2 {
   text-align: center;
 }
