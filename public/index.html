@@ -8,10 +8,39 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <input type="text" class="location-search" placeholder="What is your city or zip code?">
+    <h1 class="and-now-the-weather">And now, the weather!</h1>
+    <h2 class="display-type">
+      Choose your display type
+    </h2>
+    <section class="radio-buttons">
+      <label
+        ><input name="temp" type="radio" class="kelvin" checked />Kelvin</label
+      >
+      <label><input name="temp" type="radio" class="celsius" />Celsius</label>
+      <label
+        ><input name="temp" type="radio" class="fahrenheit" />Fahrenheit</label
+      >
+      <label
+        ><input name="temp" type="radio" class="intensity" />With
+        Intensity</label
+      >
+    </section>
+    <section class="be-centered">
+      <input
+        type="text"
+        class="location-search"
+        placeholder="What is your city or zip code?"
+      />
       <button class="search">Search</button>
     </section>
-    <section class="display">This will be the weather</section>
+    <section class="display">
+      <p>This is the current weather in <span class="city-name"></span></p>
+      <p class="display-text"></p>
+      <p>This is the current temperature</p>
+      <p class="display-temp"></p>
+      <p>These are the wind conditions</p>
+      <p class="display-wind"></p>
+    </section>
     <footer class="comparison"></footer>
     <script src="/main.js" charset="utf-8"></script>
   </body>
