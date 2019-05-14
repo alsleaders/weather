@@ -2,21 +2,22 @@ const main = () => {
   // DONE set up input
   // DONE make button work
 }
-// let cityQuery = document.querySelector('.location-search').value
-// let cityZip =
-// let cityName = cityZip || cityText
 
 const getUnitsForRequest = () => {
   // get the current value of the radios
   // default
-  document.getElementById('.kelvin').checked = true
-  return ''
+  if (document.querySelector('.kelvin').checked) {
+    return ''
+  }
   // celsius
-  document.getElementById('.celsius').checked = true
-  return 'units=metric'
+
+  if (document.querySelector('.celsius').checked) {
+    return '&units=metric'
+  }
   // fahrenheit
-  document.getElementById('.fahrenheit').checked = true
-  return 'units=imperial'
+  if (document.querySelector('.fahrenheit').checked) {
+    return '&units=imperial'
+  }
 }
 
 const searchWeatherFromApi = () => {
@@ -41,12 +42,11 @@ const searchWeatherFromApi = () => {
       console.log({ city })
       console.log(city.weather)
       console.log(city.weather[0])
-      console.log(city.weather[0].description)
+      // console.log(city.weather[0].description)
       document.querySelector('.display-text').textContent =
         city.weather[0].description
       document.querySelector('.display-temp').textContent = city.main.temp
-      document.querySelector('.display-wind').textContent =
-        city.wind.speed + ' in m/s'
+      document.querySelector('.display-wind').textContent = city.wind.speed
     })
   // css stuff for each possible display
 }

@@ -9,22 +9,6 @@
   </head>
   <body>
     <h1 class="and-now-the-weather">And now, the weather!</h1>
-    <h2 class="display-type">
-      Choose your display type
-    </h2>
-    <section class="radio-buttons">
-      <label
-        ><input name="temp" type="radio" class="kelvin" checked />Kelvin</label
-      >
-      <label><input name="temp" type="radio" class="celsius" />Celsius</label>
-      <label
-        ><input name="temp" type="radio" class="fahrenheit" />Fahrenheit</label
-      >
-      <label
-        ><input name="temp" type="radio" class="intensity" />With
-        Intensity</label
-      >
-    </section>
     <section class="be-centered">
       <input
         type="text"
@@ -32,6 +16,22 @@
         placeholder="What is your city or zip code?"
       />
       <button class="search">Search</button>
+    </section>
+    <h2 class="display-type">
+      Choose your display type
+    </h2>
+    <section class="radio-buttons">
+      <label
+        ><input name="temp" type="radio" class="kelvin" checked />Kelvin</label
+      >
+      <label
+        ><input name="temp" type="radio" class="celsius" />Celsius (temp in
+        degrees C, wind in m/s)</label
+      >
+      <label
+        ><input name="temp" type="radio" class="fahrenheit" />Fahrenheit (temp
+        in degrees F, wind in mph</label
+      >
     </section>
     <section class="display">
       <p>This is the current weather in <span class="city-name"></span></p>

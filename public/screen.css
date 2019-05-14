@@ -18,6 +18,15 @@ body {
   background-repeat: no-repeat; */
 }
 
+h1 {
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
 .radio-buttons {
   display: flex;
   flex-direction: column;
@@ -25,6 +34,7 @@ body {
   color: slateblue;
   margin: 0%;
 }
+
 input.radio {
   margin: 0;
 }
@@ -53,4 +63,6 @@ button {
 
 .display {
   text-align: center;
+  margin: 0;
+  padding 1rem;
 }
