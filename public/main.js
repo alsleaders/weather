@@ -37,6 +37,9 @@ const searchWeatherFromApi = () => {
       document.querySelector('.display-temp').textContent = city.main.temp
       document.querySelector('.display-wind').textContent = city.wind.speed
     })
+    .catch(error => {
+      alert('Please check your entry and try your search again!')
+    })
   // css stuff for each possible display
 }
 
