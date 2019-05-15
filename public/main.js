@@ -1,28 +1,17 @@
-const main = () => {
-  // DONE set up input
-  // DONE make button work
-}
-
 const getUnitsForRequest = () => {
   // get the current value of the radios
-  // default
   if (document.querySelector('.kelvin').checked) {
     return ''
   }
-  // celsius
-
   if (document.querySelector('.celsius').checked) {
     return '&units=metric'
   }
-  // fahrenheit
   if (document.querySelector('.fahrenheit').checked) {
     return '&units=imperial'
   }
 }
 
 const searchWeatherFromApi = () => {
-  // document.querySelector('.search').disabled = true
-  // get city name
   const cityName = document.querySelector('.location-search').value
   console.log(cityName)
   // set up fetch
@@ -44,14 +33,13 @@ const searchWeatherFromApi = () => {
       console.log(city.weather[0])
       // console.log(city.weather[0].description)
       document.querySelector('.display-text').textContent =
-        city.weather[0].description
+        city.weather[0].main + ' - ' + city.weather[0].description
       document.querySelector('.display-temp').textContent = city.main.temp
       document.querySelector('.display-wind').textContent = city.wind.speed
     })
   // css stuff for each possible display
 }
 
-document.addEventListener('DOMContentLoaded', main)
 document
   .querySelector('.search')
   .addEventListener('click', searchWeatherFromApi)
